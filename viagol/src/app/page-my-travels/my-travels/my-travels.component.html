@@ -1,0 +1,8 @@
+<div class="content">
+  <div class="actionsContainer">
+    <button class="mat-elevation-z6" mat-stroked-button (click)="goToAddTravelForm()" >NOVA VIAGEM</button>
+  </div>
+  <div class="table-container">
+    <app-my-travels-table (clickedBtnEdit)="editTravel($event)" (clickedBtnDelete)="deleteTravel($event)" [travels]="travels" ></app-my-travels-table>
+  </div>
+</div>

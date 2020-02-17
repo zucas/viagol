@@ -1,0 +1,28 @@
+<div class="orange-bg">
+  <mat-card class="mat-elevation-z6">
+    <mat-card-title class="gol-brand-orange">
+      Adicione sua viagem
+    </mat-card-title>
+    <mat-card-content class="vertical-space-2xl">
+      <form>
+        <mat-form-field class="full-width">
+          <mat-label>Origem</mat-label>
+          <input class="login-input" matInput placeholder="CGH" #departure >
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Destino</mat-label>
+          <input matInput placeholder="SDU" #arrival >
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Data</mat-label>
+          <input matInput type="datetime-local" #date >
+        </mat-form-field>
+
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="vertical-space-xl horizontal-center">
+      <button mat-stroked-button color="primary" (click)="onClickAdd(departure.value, arrival.value, date.value)" mat-button>ADICIONAR</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

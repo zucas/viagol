@@ -1,0 +1,28 @@
+<div class="orange-bg">
+  <mat-card class="mat-elevation-z6">
+    <mat-card-title class="gol-brand-orange">
+      Edite sua viagem
+    </mat-card-title>
+    <mat-card-content class="vertical-space-2xl">
+      <form>
+        <mat-form-field class="full-width">
+          <mat-label>Origem</mat-label>
+          <input [(ngModel)]="travel.departure" [ngModelOptions]="{standalone: true}"  class="login-input" matInput placeholder="CGH" >
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Destino</mat-label>
+          <input [(ngModel)]="travel.arrival" [ngModelOptions]="{standalone: true}"  matInput placeholder="SDU" >
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Data</mat-label>
+          <input [(ngModel)]="travel.date" [ngModelOptions]="{standalone: true}"  matInput type="datetime-local" >
+        </mat-form-field>
+
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="vertical-space-xl horizontal-center">
+      <button mat-stroked-button color="primary" (click)="onClickEdit()" mat-button>EDITAR</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

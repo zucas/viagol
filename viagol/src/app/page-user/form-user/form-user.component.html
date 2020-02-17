@@ -1,0 +1,28 @@
+<div class="content">
+  <mat-card class="mat-elevation-z6">
+    <mat-card-title class="gol-brand-orange">
+      Meus dados
+    </mat-card-title>
+    <mat-card-content class="vertical-space-2xl">
+      <form>
+        <mat-form-field class="full-width">
+          <mat-label>Nome</mat-label>
+          <input [ngModelOptions]="{standalone: true}" [(ngModel)]="userName" class="login-input" matInput >
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Email</mat-label>
+          <input disabled [ngModelOptions]="{standalone: true}" [(ngModel)]="userEmail" matInput >
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Nova Senha</mat-label>
+          <input matInput type="password" #password >
+        </mat-form-field>
+
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="vertical-space-xl horizontal-center">
+      <button (click)="editUser(password.value)" mat-stroked-button color="primary" mat-button>ALTERAR DADOS</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
