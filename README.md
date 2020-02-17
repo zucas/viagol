@@ -16,7 +16,7 @@ Para autenticação optei em ultilizar JWT.
 
 ###### USER
 Metodo: GET 
-Endpoint: `v1/users`
+Endpoint: `GET v1/users`
 Função: Retornar a lista de todos usuários
 Requer JWT: Sim
 
@@ -50,3 +50,9 @@ Metodo: DELETE
 Endpoint: `v1/travels/id:`
 Função: deleta uma viagem
 Requer JWT: Sim
+
+###### AUTH
+Metodo: LOGIN 
+Endpoint: `v1/login`
+Função: Valida um email e senha e retorna o token JWT
+Requer JWT: Não
