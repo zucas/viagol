@@ -15,24 +15,15 @@ Para autenticação optei em ultilizar JWT.
 ###### Rotas
 
 ###### USER
-
 Metodo: GET 
-
 Endpoint: `GET v1/users`
-
 Função: Retornar a lista de todos usuários
-
 Requer JWT: Sim
 
-
 Metodo: POST
-
 Endpoint: `v1/users`
-
 Função: criar um usuario
-
 Requer JWT: Não
-
 
 Metodo: PUT
 Endpoint: `v1/users/id:`
