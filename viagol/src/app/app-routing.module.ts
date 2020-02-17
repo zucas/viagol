@@ -8,6 +8,7 @@ import { AuthGuard } from './auth.guard';
 import {PageRegisterComponent} from './page-register/page-register.component';
 
 const routes: Routes = [
+  { path: '', component: PageMyTravelsComponent, canActivate: [AuthGuard] },
   { path: 'login', component: PageLoginComponent },
   { path: 'registrar', component: PageRegisterComponent },
   { path: 'minhas-viagens', component: PageMyTravelsComponent, canActivate: [AuthGuard]  },
